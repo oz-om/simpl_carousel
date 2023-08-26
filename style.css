@@ -1,0 +1,53 @@
+*, 
+*::after, 
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #CBCBCB;
+}
+.carousel_wrapper {
+  position: relative;
+}
+.carousel {
+  margin-inline: auto;
+  margin-top: 100px;
+  height: 300px;
+  display: flex;
+  justify-content: flex-start;
+  border: 2px solid #0455A4;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  flex-shrink: 0;
+  width: 400%;
+  transition: transform 500ms linear;
+}
+
+.slides > div {
+  flex: 1;
+  color: white;
+  display: grid;
+  place-content: center;
+  color: #fff;
+}
+
+.controles {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between
+}
+
+button {
+  color: #fff;
+  background-color: #9276E8;
+  padding: 5px 10px
+}
